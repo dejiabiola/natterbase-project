@@ -15,19 +15,21 @@
   .test-case-wrapper {
     min-height: 573px;
     padding-top: 29px;
-    padding-right: 32px;
     background: #ffffff;
     width: 100%;
   }
 
   .cases {
-    max-height: 400px;
+    max-height: 430px;
+    min-height: 430px;
     overflow: scroll;
     max-width: 100%;
+    padding-right: 32px;
+    margin-bottom: 45px;
   }
 
-  .cases::-webkit-casesbar {
-    width: 3px;
+  .cases::-webkit-scrollbar {
+    width: 3px !important; 
   }
 
   .cases::-webkit-scrollbar-thumb {
@@ -41,6 +43,7 @@
 
   .button-wrapper {
     padding-left: 21px;
+    padding-right: 32px;
     display: flex;
     justify-content: space-between;
 

@@ -1,6 +1,14 @@
 .test-case-btn {
+  width: 73px;
+  
+
+  .dropdown {
+    position: static !important;
+  }
+
+
   .dropdown-toggle.btn {
-    width: 73px;
+    width: 100%;
     height: 28px;
     border-radius: 5px;
     border: 2px solid rgba(26, 12, 47, 0.1);
@@ -13,5 +21,52 @@
     line-height: 16px;
     color: #ffffff;
     font-family: "Nunito", sans-serif;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::after {
+      display: none !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    img {
+      position: absolute;
+      top:10px;
+      right: 11px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  .dropdown-menu.show {
+    top: -12px !important;
+    left: -37px !important;
+    position: absolute;
+  }
+
+  
+
+  .btn-primary.pass {
+    background: #4DBD98;
+  }
+
+  .btn-primary.fail {
+    background: #EB0E43;
+  }
+
+  .btn-primary.untested {
+    background: #3D43A2;
+  }
+
+  .btn-primary.retest {
+    background: #F15832;
   }
 }

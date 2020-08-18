@@ -1,29 +1,37 @@
 import React from 'react'
 import { Dropdown } from 'react-bootstrap'
 import './test-case-button.scss'
+import TestCaseArrow from '../assets/test-case-arrow.svg'
+import TestCaseDropdown from '../test-case-dropdown/TestCaseDropdown';
 
-function getName(children) {
-  switch(children) {
+function getName(state) {
+  switch (state) {
     case 'pass':
       return 'Pass';
-    case 'failed':
+    case 'fail':
       return 'Fail';
     case 'untested':
       return 'Untest';
     case 'retest':
       return 'Retest';
     default:
-      return children;
+      return state;
   }
 }
 
-function TestCaseButton({ children }) {
+function TestCaseButton({ state, ...props }) {
   return (
     <div className="test-case-btn">
-      <Dropdown.Toggle id="dropdown-basic">
-        {getName(children)}
-      </Dropdown.Toggle>
-      <img src="" alt=""/>
+      <Dropdown>
+        <Dropdown.Toggle id="dropdown-basic" className={state}>
+          {getName(state)}
+          <img src={TestCaseArrow} alt="" />
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <TestCaseDropdown state={state} {...props} />
+        </Dropdown.Menu>
+      </Dropdown>
     </div>
   )
 }

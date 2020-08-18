@@ -8,6 +8,7 @@ import NotificationBell from '../assets/bell.svg'
 import Hamburger from '../assets/hamburger.svg'
 import '../sideNav/sideNav.scss'
 import ArrowDown from '../assets/arrow-down.svg'
+import RightBurger from '../assets/right-burger.svg'
 
 class TopNav extends Component {
   state = {
@@ -24,12 +25,12 @@ class TopNav extends Component {
                 <img src={Hamburger} alt=""/>
                 <span className="sr-only">Toggle Menu</span>
               </button>
-              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa fa-bars"></i>
+              <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img src={RightBurger} alt=""/>
               </button>
     
   
-              <div className="collapse navbar-collapse ml-4" id="navbarSupportedContent" >
+              <div className="collapse navbar-collapse pl-4" id="navbarSupportedContent" >
                 <div className="fcmb-wrapper nav navbar-nav">
                   <img src={FCMBLogo} alt=""/>
                   <div className="vertical-line"></div>

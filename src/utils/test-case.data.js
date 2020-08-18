@@ -63,5 +63,5 @@ export const testCaseData = [
     id: 13,
     title: 'Make the background image blur',
     state: 'untested'
-  },
+  }
 ]
