@@ -1,0 +1,39 @@
+.modules {
+  width: 217px;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #03293d;
+      font-family: "Nunito", sans-serif;
+    }
+  }
+
+  .cards-container {
+    max-height: 580px;
+    overflow-y: scroll;
+    overflow-x: auto;
+  }
+
+  .scroll::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    box-shadow: inset 0 0 6px #c4c4c4;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+$font-family: "Nunito", sans-serif;
+$primary: #3e64ff;
+$white: #ffffff;
+
+.ftco-section {
+  padding: 7em 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section {
+  font-size: 28px;
+  color: "black";
+  small {
+    font-size: 18px;
+  }
+}
+
+//COVER BG
+
+.navbar {
+  padding: 15px 10px;
+  background: #fbfbfb !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  height: 86px;
+  width: 100%;
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.sidebar-logo {
+  height: 86px;
+  display: grid;
+  place-content: center;
+  border-bottom: 1px solid rgba(232, 231, 234, 0.1);
+}
+
+//SIDEBAR
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+  min-height: 100vh;
+  min-width: 270px;
+  max-width: 270px;
+  background: #052231;
+  transition: all 0.3s;
+  &.active {
+    min-width: 96px;
+    max-width: 96px;
+    text-align: center;
+  }
+
+  ul.components {
+    padding: 0;
+
+    li.top-icon {
+      display: grid;
+      place-content: center;
+      width: 38px;
+      height: 38px;
+    }
+
+    li.active {
+      background: #23b3e8;
+      border-radius: 10px;
+      padding: 13px 13px;
+      margin-bottom: 20px;
+    }
+
+    li.top-icon:nth-of-type(2) {
+      margin-bottom: 20px;
+    }
+
+    li.top-icon:hover {
+      background: #23b3e8;
+      border-radius: 10px;
+    }
+  }
+  ul {
+    a {
+      padding: 10px 30px;
+      display: block;
+      color: rgba(255, 255, 255, 1);
+      span {
+        margin-right: 15px;
+        @media (min-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .side-bar-icons {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 86px);
+
+    div {
+      flex: 1 1 auto;
+      min-height: calc((100vh - 86px) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 40px;
+    }
+
+    ul {
+      flex: 1 1 auto;
+      margin-bottom: 0;
+      min-height: calc((100vh - 86px) / 3);
+      border-bottom: 1px solid rgba(232, 231, 234, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 767px) {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    margin-left: -80px !important;
+    &.active {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#sidebarCollapse {
+  span {
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+
+
+.navbar-collapse {
+  background: #fbfbfb !important;
+
+  .fcmb-wrapper {
+    height: 100%;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .vertical-line {
+    border: 1px solid rgba(45, 45, 45, 0.1);
+    height: 30px;
+    margin-left: 47px;
+  }
+
+  .input-wrapper {
+    position: relative;
+    padding-left: 30px;
+
+    input {
+      border: none;
+      color: #2d2d2d;
+      opacity: 0.7;
+      width: 300px;
+      max-width: 100%;
+      background: #fbfbfb;
+
+      :focus {
+        outline-color: #052231;
+      }
+    }
+
+    ::placeholder {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #2d2d2d;
+      opacity: 0.3;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+
+  .top-nav-right-side {
+    margin-right: 155px;
+
+    .badge-stuff,
+    .owner-stuff {
+      margin-right: 32px;
+    }
+
+    .bell {
+      margin-right: 27px;
+    }
+
+    .profile-pic {
+      margin-right: 10px;
+    }
+
+    .profile-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      p {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #03293d;
+      }
+
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        color: #23b3e8;
+        font-family: var(--font-family);
+      }
+
+      .arrow-down {
+        position: absolute;
+        top: 15px;
+        right: -25px;
+      }
+    }
+  }
+}

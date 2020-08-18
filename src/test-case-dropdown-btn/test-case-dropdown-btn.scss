@@ -1,0 +1,19 @@
+.dropdown-btn {
+  position: relative;
+
+
+  img {
+    position: absolute;
+    top: 7px;
+    right: 19.66px;
+    visibility: hidden;
+  }
+
+  button.active {
+    background: rgba(232, 231, 234, 0.3);
+  }
+
+  button.active ~ img {
+    visibility: visible;
+  }
+}

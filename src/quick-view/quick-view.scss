@@ -1,0 +1,28 @@
+.quickview {
+  width: 400px;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #03293d;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 13px;
+  }
+
+  .cards {
+    min-height: 573px;
+    padding: 45px 39px 45px 30px;
+    background: #ffffff;
+    width: 100%;
+  }
+
+  .quickview-cards-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
