@@ -33,6 +33,10 @@
       box-shadow: none !important;
     }
 
+    &:active {
+      border: 2px solid rgba(26, 12, 47, 0.1) !important;
+    }
+
     img {
       position: absolute;
       top:10px;
@@ -56,17 +60,34 @@
 
   .btn-primary.pass {
     background: #4DBD98;
+
+    &:active {
+      background: #4DBD98 !important;
+    }
   }
 
   .btn-primary.fail {
     background: #EB0E43;
+
+    &:active {
+      background: #EB0E43!important;
+    }
   }
 
   .btn-primary.untested {
     background: #3D43A2;
+
+    &:active {
+      background: #3D43A2 !important;
+    }
+    
   }
 
   .btn-primary.retest {
     background: #F15832;
+
+    &:active {
+      background: #F15832 !important;
+    }
   }
 }
