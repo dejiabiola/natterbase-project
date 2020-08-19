@@ -10,13 +10,13 @@ function ModulesCard({ data: { title, dueDate } }) {
   return (
     <div className="modules-card">
       <div className="topdiv">
-        <p class="mb-0">{title}</p>
+        <p className="mb-0">{title}</p>
         <img src={ThreeDots} alt="" className="pointer" />
       </div>
       <div className="bottomdiv">
         <div className="bottom-left">
           <img src={Clock} alt=""/>
-          <p class="mb-0">{dueDate}</p>
+          <p className="mb-0">{dueDate}</p>
         </div>
         <div className="bottom-right">
           {/* <img src={Pictures} alt=""/> */}

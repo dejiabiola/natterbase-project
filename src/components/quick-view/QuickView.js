@@ -1,9 +1,12 @@
 import React from 'react'
 import './quick-view.scss'
 import QuickViewCard from '../quick-view-card/QuickViewCard'
-import { quickViewData } from '../../utils/quickview.data'
+import { useSelector } from 'react-redux'
 
 function QuickView() {
+
+  const quickViewData = useSelector(state => state.data.quickViewData)
+
   return (
     <section className="quickview">
       <h2>Quick Overview</h2>

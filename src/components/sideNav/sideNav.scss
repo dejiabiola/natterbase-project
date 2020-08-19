@@ -55,8 +55,8 @@ $white: #ffffff;
 
 #sidebar {
   min-height: 100vh;
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 0px;
+  max-width: 0px;
   background: #052231;
   transition: all 0.3s;
   &.active {

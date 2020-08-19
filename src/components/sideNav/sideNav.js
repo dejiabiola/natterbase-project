@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react'
+import React from 'react'
 import './sideNav.scss'
 import { Link } from 'react-router-dom'
 import SideBarLogo from '../../assets/sidenav-icon.svg'
@@ -11,16 +11,16 @@ import Ji from '../../assets/ji.svg'
 import Lg from '../../assets/lg.svg'
 import Aw from '../../assets/aw.svg'
 import Aw2 from '../../assets/aw2.svg'
+import { connect } from 'react-redux'
 
-class SideNavComponent extends Component {
-  state = {
-    showSideBar: true
-  }
-  render() {
-    const { showSideBar } = this.state;
+
+
+
+const SideNavComponent = ({ sideNav }) => {
+
     return (
-      <Fragment>
-        <nav id="sidebar" className={showSideBar ? 'active' : ''}>
+      <>
+        <nav id="sidebar" className={!sideNav ? 'active' : ''}>
           <div className="sidebar-logo">
             <Link to="/" className="logo">
               <img src={SideBarLogo} alt="" />
@@ -78,10 +78,15 @@ class SideNavComponent extends Component {
             </div>
           </div>
         </nav>
-      </Fragment>
+      </>
     )
+}
+
+const mapStateToProps = ({ sideNav }) => {
+  return {
+    sideNav
   }
 }
 
 
-export default SideNavComponent
+export default connect(mapStateToProps)(SideNavComponent)

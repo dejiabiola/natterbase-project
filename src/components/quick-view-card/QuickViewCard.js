@@ -10,8 +10,8 @@ function QuickViewCard({ data: { title, number, color, above}}) {
         <span>{number}</span>
       </div>
       <div>
-        <p class="mb-0">{above}</p>
-        <p class="mb-0">{title}</p>
+        <p className="mb-0">{above}</p>
+        <p className="mb-0">{title}</p>
       </div>
     </div>
   )

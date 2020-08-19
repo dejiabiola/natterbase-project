@@ -30,7 +30,7 @@ const panes = [
 
 function Tabs() {
   return (
-    <div class="tabs">
+    <div className="tabs">
       <Tab menu={{ secondary: true, pointing: true }} panes={panes} activeIndex={2} />
       <div className="absolute">
         <img src={Calendar} alt=""/>

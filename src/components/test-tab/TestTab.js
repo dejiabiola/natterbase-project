@@ -6,7 +6,7 @@ import AddedTestCase from '../added-test-case/AddedTestCase'
 
 function TestTab() {
   return (
-    <section class="test-tab">
+    <section className="test-tab">
       <Modules />
       <AddedTestCase />
       <QuickView />
