@@ -78,7 +78,6 @@ class SideNavComponent extends Component {
             </div>
           </div>
         </nav>
-        {/* topnav */}
       </Fragment>
     )
   }
