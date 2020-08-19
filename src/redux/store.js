@@ -5,6 +5,7 @@ import rootReducer from './root-reducer'
 
 const middlewares = []
 
+// To endure the store values are only logged in development mode
 if (process.env.NODE_ENV === 'development') {
   middlewares.push(logger)
 } 
