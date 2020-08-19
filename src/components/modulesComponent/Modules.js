@@ -4,8 +4,9 @@ import ModulesCard from '../modulesCard/ModulesCard'
 import ThreeDots from '../../assets/3dots.svg'
 import { useSelector } from 'react-redux'
 
+// Main component for the modules section
 function Modules() {
-
+  // get the modules data from the redux store
   const modulesData = useSelector(state => state.data.modulesData);
 
   return (

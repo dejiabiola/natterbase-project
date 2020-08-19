@@ -3,8 +3,9 @@ import './quick-view.scss'
 import QuickViewCard from '../quick-view-card/QuickViewCard'
 import { useSelector } from 'react-redux'
 
+// Main section for the quickview section
 function QuickView() {
-
+  // get the data from the redux store and render
   const quickViewData = useSelector(state => state.data.quickViewData)
 
   return (

@@ -3,6 +3,7 @@ import './quick-view-card.scss'
 import ShoppingBag from '../../assets/shoppin-bag.svg'
 
 function QuickViewCard({ data: { title, number, color, above}}) {
+  // Component for each card in the quickview section
   return (
     <div className={`${color ? color : ''} quickview-card`}>
       <div className="top">

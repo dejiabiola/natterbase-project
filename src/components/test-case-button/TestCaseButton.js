@@ -5,6 +5,7 @@ import TestCaseArrow from '../../assets/test-case-arrow.svg'
 import TestCaseDropdown from '../test-case-dropdown/TestCaseDropdown';
 
 function getName(state) {
+  // Switch on the state props passed from parent component to get the title of the button
   switch (state) {
     case 'pass':
       return 'Pass';
@@ -19,6 +20,8 @@ function getName(state) {
   }
 }
 
+
+//Function to render the buttons on the test case component. Also passes props to the dropdown
 function TestCaseButton({ state, ...props }) {
   return (
     <div className="test-case-btn">
@@ -27,7 +30,7 @@ function TestCaseButton({ state, ...props }) {
           {getName(state)}
           <img src={TestCaseArrow} alt="" />
         </Dropdown.Toggle>
-
+  
         <Dropdown.Menu>
           <TestCaseDropdown state={state} {...props} />
         </Dropdown.Menu>

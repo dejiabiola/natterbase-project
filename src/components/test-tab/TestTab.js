@@ -5,6 +5,7 @@ import './test-tab.scss'
 import AddedTestCase from '../added-test-case/AddedTestCase'
 
 function TestTab() {
+  // Component for the test tab which is the active tab for this task
   return (
     <section className="test-tab">
       <Modules />

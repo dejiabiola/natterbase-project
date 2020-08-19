@@ -4,6 +4,8 @@ import { Tab } from 'semantic-ui-react'
 import Calendar from '../../assets/calendar.svg'
 import TestTab from '../test-tab/TestTab'
 
+
+// Panes to be rendered. For now, we only have one active pane
 const panes = [
   {
     menuItem: 'Overview',
@@ -29,6 +31,7 @@ const panes = [
 
 
 function Tabs() {
+  // Renders the tabs on the page and the appropriate panes
   return (
     <div className="tabs">
       <Tab menu={{ secondary: true, pointing: true }} panes={panes} activeIndex={2} />

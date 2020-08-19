@@ -17,69 +17,73 @@ import { connect } from 'react-redux'
 
 
 const SideNavComponent = ({ sideNav }) => {
-
-    return (
-      <>
-        <nav id="sidebar" className={!sideNav ? 'active' : ''}>
-          <div className="sidebar-logo">
-            <Link to="/" className="logo">
-              <img src={SideBarLogo} alt="" />
+  // Sidenav component
+  return (
+    <>
+      <nav id="sidebar" className={!sideNav ? 'active' : ''}>
+      {/* //Top Logo */}
+        <div className="sidebar-logo">
+          <Link to="/" className="logo">
+            <img src={SideBarLogo} alt="" />
+          </Link>
+        </div>
+        <div className="side-bar-icons">
+          {/* First section of icons */}
+          <ul className="list-unstyled components">
+            <li className="active top-icon">
+              <Link to="/" className="">
+                <img src={FirstSideIcon} alt="" />
+              </Link>
+            </li>
+            <li className="top-icon">
+              <Link to="/" className="">
+                <img src={SecondSideIcon} alt="" />
+              </Link>
+            </li>
+            <li className="top-icon">
+              <Link to="/" className="">
+                <img src={ThirdSideIcon} alt="" />
+              </Link>
+            </li>
+          </ul>
+          {/* second section of icons */}
+          <ul className="list-unstyled components middle-side-icons">
+            <li>
+              <Link to="/" className="">
+                <img src={Pn} alt="" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="">
+                <img src={Ji} alt="" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="">
+                <img src={Lg} alt="" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="">
+                <img src={Aw} alt="" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="">
+                <img src={Aw2} alt="" />
+              </Link>
+            </li>
+          </ul>
+          <div>
+          {/* third section */}
+            <Link to="/" className="">
+              <img src={LastSideIcon} alt="" />
             </Link>
           </div>
-          <div className="side-bar-icons">
-            <ul className="list-unstyled components">
-              <li className="active top-icon">
-                <Link to="/" className="">
-                  <img src={FirstSideIcon} alt="" />
-                </Link>
-              </li>
-              <li className="top-icon">
-                <Link to="/" className="">
-                  <img src={SecondSideIcon} alt="" />
-                </Link>
-              </li>
-              <li className="top-icon">
-                <Link to="/" className="">
-                  <img src={ThirdSideIcon} alt="" />
-                </Link>
-              </li>
-            </ul>
-            <ul className="list-unstyled components middle-side-icons">
-              <li>
-                <Link to="/" className="">
-                  <img src={Pn} alt="" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="">
-                  <img src={Ji} alt="" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="">
-                  <img src={Lg} alt="" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="">
-                  <img src={Aw} alt="" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="">
-                  <img src={Aw2} alt="" />
-                </Link>
-              </li>
-            </ul>
-            <div>
-              <Link to="/" className="">
-                <img src={LastSideIcon} alt="" />
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </>
-    )
+        </div>
+      </nav>
+    </>
+  )
 }
 
 const mapStateToProps = ({ sideNav }) => {

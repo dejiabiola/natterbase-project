@@ -2,11 +2,10 @@ import React from 'react'
 import './modulesCard.scss'
 import ThreeDots from '../../assets/3dots.svg'
 import Clock from '../../assets/clock.svg'
-import Pictures from '../../assets/pictures.svg'
-import Pic4 from '../../assets/pic4.svg'
+import ModuleImages from '../module-images/ModuleImages'
 
 function ModulesCard({ data: { title, dueDate } }) {
-  
+  // Component for each module card
   return (
     <div className="modules-card">
       <div className="topdiv">
@@ -19,7 +18,7 @@ function ModulesCard({ data: { title, dueDate } }) {
           <p className="mb-0">{dueDate}</p>
         </div>
         <div className="bottom-right">
-          {/* <img src={Pictures} alt=""/> */}
+          <ModuleImages />
         </div>
       </div>
     </div>

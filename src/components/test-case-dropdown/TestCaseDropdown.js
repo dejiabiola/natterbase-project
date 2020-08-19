@@ -9,10 +9,12 @@ import { connect } from 'react-redux'
 
 
 
-
+// component for the dropdown for the testcase component. Passes props to the buttons to be rendered in it
 function TestCaseDropdown({ id, state, updateTestCase }) {
 
+
   const handleClick = (id, newState) => {
+    //Dispatch action to the redux store to update the buttons state
     updateTestCase({id, newState})
   }
 

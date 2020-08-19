@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import SideNav from "./components/sideNav/sideNav";
@@ -8,17 +8,14 @@ import MainPage from './pages/mainPage/mainPage'
 
 
 
-class App extends Component {
+const App = () => {
 
-
-  render() {
-    return (
-      <div className="App">
-        <SideNav />
-        <MainPage  />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <SideNav />
+      <MainPage />
+    </div>
+  );
 }
 
 export default App;

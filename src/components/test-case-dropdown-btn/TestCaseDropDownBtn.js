@@ -4,6 +4,7 @@ import CheckedCircle from '../../assets/checked-circle.svg'
 
 
 function TestCaseDropDownBtn({ children, active }) {
+  // component to render each button on the testcase dropdown
   return (
     <div className="dropdown-btn">
       <button className={`${active ? 'active' : ''}`}>{children}</button>

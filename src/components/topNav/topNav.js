@@ -13,15 +13,17 @@ import { connect } from 'react-redux'
 import { toggleSideNav } from '../../redux/side-nav/sideNav.actions'
 
 const TopNav = ({ toggleSideNav }) => {
-
+  // Top nav component
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
+        {/* Left hamburger for side nav */}
           <button type="button" id="sidebarCollapse" className="btn hambugger shadow-none" onClick={toggleSideNav}>
             <img src={Hamburger} alt="" />
             <span className="sr-only">Toggle Menu</span>
           </button>
+          {/* right hanburger for mobile nav */}
           <button className="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img src={RightBurger} alt="" />
           </button>
@@ -55,6 +57,7 @@ const TopNav = ({ toggleSideNav }) => {
 
 }
 
+// To toggle navigation for the side nav hamburger
 const mapDispatchToProps = (dispatch) => ({
   toggleSideNav: () => dispatch(toggleSideNav())
 })
