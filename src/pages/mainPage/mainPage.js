@@ -1,7 +1,7 @@
 import React from 'react'
-import TopNav from '../topNav/topNav'
+import TopNav from '../../components/topNav/topNav'
 import './mainPage.scss'
-import Content from '../content/Content'
+import Content from '../../components/content/Content'
 
 function MainPage() {
   return (

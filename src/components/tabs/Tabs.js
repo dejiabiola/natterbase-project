@@ -1,7 +1,7 @@
 import React from 'react'
 import './tabs.scss'
 import { Tab } from 'semantic-ui-react'
-import Calendar from '../assets/calendar.svg'
+import Calendar from '../../assets/calendar.svg'
 import TestTab from '../test-tab/TestTab'
 
 const panes = [

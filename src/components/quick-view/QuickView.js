@@ -1,7 +1,7 @@
 import React from 'react'
 import './quick-view.scss'
 import QuickViewCard from '../quick-view-card/QuickViewCard'
-import { quickViewData } from '../utils/quickview.data'
+import { quickViewData } from '../../utils/quickview.data'
 
 function QuickView() {
   return (

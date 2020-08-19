@@ -1,14 +1,14 @@
 import React, { Fragment, Component } from 'react'
-import FCMBLogo from '../assets/fcmb.svg'
-import Search from '../assets/search.svg'
-import Badge from '../assets/badge.svg'
-import ProfilePic from '../assets/profile-pic.svg'
-import OwnerStuff from '../assets/owner-stuff.svg'
-import NotificationBell from '../assets/bell.svg'
-import Hamburger from '../assets/hamburger.svg'
+import FCMBLogo from '../../assets/fcmb.svg'
+import Search from '../../assets/search.svg'
+import Badge from '../../assets/badge.svg'
+import ProfilePic from '../../assets/profile-pic.svg'
+import OwnerStuff from '../../assets/owner-stuff.svg'
+import NotificationBell from '../../assets/bell.svg'
+import Hamburger from '../../assets/hamburger.svg'
 import '../sideNav/sideNav.scss'
-import ArrowDown from '../assets/arrow-down.svg'
-import RightBurger from '../assets/right-burger.svg'
+import ArrowDown from '../../assets/arrow-down.svg'
+import RightBurger from '../../assets/right-burger.svg'
 
 class TopNav extends Component {
   state = {

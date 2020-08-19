@@ -2,8 +2,8 @@ import React from 'react'
 import { Input } from 'semantic-ui-react'
 import './test-case-dropdown.scss'
 import TestCaseDropDownBtn from '../test-case-dropdown-btn/TestCaseDropDownBtn'
-import InputDown from '../assets/input-down.svg'
-import InputSearch from '../assets/input-search.svg'
+import InputDown from '../../assets/input-down.svg'
+import InputSearch from '../../assets/input-search.svg'
 
 function TestCaseDropdown({ id, state, title }) {
   return (

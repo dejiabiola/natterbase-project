@@ -1,8 +1,8 @@
 import React from 'react'
 import './modules.scss'
-import ModulesCard from '../modulesCard.js/ModulesCard'
-import ThreeDots from '../assets/3dots.svg'
-import { modulesData } from '../utils/modules.data'
+import ModulesCard from '../modulesCard/ModulesCard'
+import ThreeDots from '../../assets/3dots.svg'
+import { modulesData } from '../../utils/modules.data'
 
 function Modules() {
   console.log(modulesData)

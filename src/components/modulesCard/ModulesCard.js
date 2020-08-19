@@ -1,9 +1,9 @@
 import React from 'react'
 import './modulesCard.scss'
-import ThreeDots from '../assets/3dots.svg'
-import Clock from '../assets/clock.svg'
-import Pictures from '../assets/pictures.svg'
-import Pic4 from '../assets/pic4.svg'
+import ThreeDots from '../../assets/3dots.svg'
+import Clock from '../../assets/clock.svg'
+import Pictures from '../../assets/pictures.svg'
+import Pic4 from '../../assets/pic4.svg'
 
 function ModulesCard({ data: { title, dueDate } }) {
   

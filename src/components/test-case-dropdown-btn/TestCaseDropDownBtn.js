@@ -1,6 +1,6 @@
 import React from 'react'
 import './test-case-dropdown-btn.scss'
-import CheckedCircle from '../assets/checked-circle.svg'
+import CheckedCircle from '../../assets/checked-circle.svg'
 
 function TestCaseDropDownBtn({ children, active }) {
   return (

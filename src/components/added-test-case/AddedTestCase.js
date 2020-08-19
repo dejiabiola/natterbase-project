@@ -1,7 +1,7 @@
 import React from 'react'
 import './added-test-case.scss'
 import TestCase from '../test-case/TestCase'
-import { testCaseData } from '../utils/test-case.data'
+import { testCaseData } from '../../utils/test-case.data'
 
 function AddedTestCase() {
   return (

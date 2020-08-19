@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dropdown } from 'react-bootstrap'
 import './test-case-button.scss'
-import TestCaseArrow from '../assets/test-case-arrow.svg'
+import TestCaseArrow from '../../assets/test-case-arrow.svg'
 import TestCaseDropdown from '../test-case-dropdown/TestCaseDropdown';
 
 function getName(state) {

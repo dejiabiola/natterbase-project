@@ -1,6 +1,6 @@
 import React from 'react'
 import './quick-view-card.scss'
-import ShoppingBag from '../assets/shoppin-bag.svg'
+import ShoppingBag from '../../assets/shoppin-bag.svg'
 
 function QuickViewCard({ data: { title, number, color, above}}) {
   return (
