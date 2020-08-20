@@ -34,6 +34,13 @@ $white: #ffffff;
   height: 86px;
   width: 100%;
 
+  @media (max-width: 1283px) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10
+  }
+
 }
 
 .navbar-btn {
@@ -78,8 +85,9 @@ $white: #ffffff;
     padding: 0;
 
     li.top-icon {
-      display: grid;
-      place-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 38px;
       height: 38px;
     }
