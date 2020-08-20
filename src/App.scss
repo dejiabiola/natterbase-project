@@ -5,6 +5,10 @@
 .App {
   display: flex;
 
-  min-width: 1383px;
-  overflow-x: scroll;
+
+  @media (max-width: 1186px) {
+    width: 1383px;
+    overflow-x: scroll;
+  }
+
 }

@@ -166,12 +166,18 @@ a[data-toggle="collapse"] {
   }
 }
 
+
+// Relates to top nav inter 
 .navbar-inner {
   background: #fbfbfb !important;
   width: 100%;
   max-width: 100%;
   display: flex;
   align-items: center;
+
+  .pointer {
+    cursor: pointer;
+  }
 
   .fcmb-wrapper {
     height: 100%;
@@ -229,9 +235,6 @@ a[data-toggle="collapse"] {
   .top-nav-right-side {
     margin-right: 155px;
 
-    @media (max-width: 1243px) {
-      margin-right: 30px;
-    }
 
     .badge-stuff,
     .owner-stuff {

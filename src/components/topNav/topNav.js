@@ -35,14 +35,14 @@ const TopNav = ({ toggleSideNav }) => {
               <input type="text" placeholder="Search" />
             </div>
             <div className="ml-auto d-flex top-nav-right-side">
-              <img src={NotificationBell} alt="" className="bell" />
-              <img src={OwnerStuff} alt="" className="owner-stuff" />
-              <img src={Badge} alt="" className="badge-stuff" />
+              <img src={NotificationBell} alt="" className="bell pointer" />
+              <img src={OwnerStuff} alt="" className="owner-stuff pointer" />
+              <img src={Badge} alt="" className="badge-stuff pointer" />
               <img src={ProfilePic} alt="" className="profile-pic" />
               <div className="profile-name">
                 <p className="mb-0">Mark Dawn</p>
                 <span>Markdawn@natterbase</span>
-                <img src={ArrowDown} alt="" className="arrow-down" />
+                <img src={ArrowDown} alt="" className="arrow-down pointer" />
               </div>
             </div>
           </div>
