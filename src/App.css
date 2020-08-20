@@ -8,4 +8,7 @@
 /* highly important */
 .App {
   display: flex;
+
+  min-width: 1383px;
+  overflow-x: scroll;
 }
