@@ -174,6 +174,7 @@ a[data-toggle="collapse"] {
   max-width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 42px;
 
   .pointer {
     cursor: pointer;
@@ -233,7 +234,7 @@ a[data-toggle="collapse"] {
   }
 
   .top-nav-right-side {
-    margin-right: 155px;
+    padding-right: 249px;
 
 
     .badge-stuff,
@@ -247,6 +248,9 @@ a[data-toggle="collapse"] {
 
     .profile-pic {
       margin-right: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
     }
 
     .profile-name {

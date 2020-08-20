@@ -25,7 +25,7 @@ const TopNav = ({ toggleSideNav }) => {
           
 
 
-          <div className="navbar-inner pl-4" >
+          <div className="navbar-inner" >
             <div className="fcmb-wrapper">
               <img src={FCMBLogo} alt="" />
               <div className="vertical-line"></div>
@@ -38,7 +38,7 @@ const TopNav = ({ toggleSideNav }) => {
               <img src={NotificationBell} alt="" className="bell pointer" />
               <img src={OwnerStuff} alt="" className="owner-stuff pointer" />
               <img src={Badge} alt="" className="badge-stuff pointer" />
-              <img src={ProfilePic} alt="" className="profile-pic" />
+              <img src='https://res.cloudinary.com/dejiabiola/image/upload/c_fill,h_48,q_90,w_48/v1597904395/envato_2.0/profile.jpg' alt="" className="profile-pic" />
               <div className="profile-name">
                 <p className="mb-0">Mark Dawn</p>
                 <span>Markdawn@natterbase</span>
