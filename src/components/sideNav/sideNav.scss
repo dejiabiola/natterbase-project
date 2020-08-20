@@ -25,22 +25,17 @@ $white: #ffffff;
 
 //COVER BG
 
-.navbar {
+.top-navbar {
   padding: 15px 10px;
-  background: #fbfbfb !important;
+  // background: #fbfbfb !important;
   border: none;
   border-radius: 0;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   height: 86px;
   min-width: 100vh;
-
-  @media (max-width: 1383px) {
-    position: sticky;
-    top: 0;
-    left: 86px;
-    z-index: 5;
-  }
-
+  background: lightblue !important;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-btn {
@@ -67,13 +62,6 @@ $white: #ffffff;
   max-width: 0px;
   background: #052231;
   transition: all 0.3s;
-
-  @media (max-width: 1283px) {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
 
   &.active {
     min-width: 96px;
@@ -179,10 +167,12 @@ a[data-toggle="collapse"] {
   }
 }
 
-.navbar-collapse {
+.navbar-inner {
   background: #fbfbfb !important;
   width: 100%;
   max-width: 100%;
+  display: flex;
+  align-items: center;
 
   .fcmb-wrapper {
     height: 100%;
